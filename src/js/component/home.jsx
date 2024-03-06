@@ -1,55 +1,53 @@
 import React, {useState} from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
 //create your first component
 const Home = () => {
 
 	const [lightGreen,setLightGreen] = useState("btn-success")
-	const [lightYellow,setLightYellow] = useState("btn-warning")
-	const [lightRed,setLightRed] = useState("btn-danger")
+	const [lightYellow,setLightYellow] = useState("btn-secondary")
+	const [lightRed,setLightRed] = useState("btn-secondary")
 
 	function changeColor() {
 		if (lightRed === "btn-danger") {
 			setLightRed("btn-secondary")
-		} else {
+			setLightGreen("btn-success")
+		} else if  (lightGreen === "btn-success"){
+			setLightGreen("btn-secondary")
+			setLightYellow("btn-warning")
+		} else if (lightYellow === "btn-warning"){
+			setLightYellow("btn-secondary")
 			setLightRed("btn-danger")
-		}
-		
-	// if (lightGreen === "btn-success") {
-	// 	setLightYellow("btn-secondary")
-	// 	setLightRed("btn-secondary")
-	// }
-	// 	setLightGreen("btn-secondary")
-	// 	setLightYellow("btn-secondary")
-	// 	setLightRed("btn-secondary")
+		} else lightGreen === "btn-success"
 	}
+
+	// const [lightGreen,setLightGreen] = useState("btn-success")
+	// const [lightYellow,setLightYellow] = useState("btn-warning")
+	// const [lightRed,setLightRed] = useState("btn-danger")
+
+	// function changeColor() {
+	// 		if (lightRed === "btn-danger") {
+	// 			setLightRed("btn-secondary")
+	// 		} else setLightRed("btn-danger")
+
+	// 		if (lightYellow === "btn-warning") {
+	// 			setLightYellow("btn-secondary")
+	// 		} else setLightYellow("btn-warning")
+
+	// 		if (lightGreen === "btn-success") {
+	// 			setLightGreen("btn-secondary")
+	// 		} else setLightGreen("btn-success")
+	// 	}
 
 	return (
 		<>
-		<div className="traffic top bg-dark d-flex">top</div>
-			<div className="container d-flex align-items-center flex-column bg-dark">
-				<div className={"btn rounded-circle "+lightRed} onClick={changeColor}>red</div>
-				<div className={"btn rounded-circle "+lightYellow} onClick={changeColor}>yellow</div>
-				<div className={"btn rounded-circle "+lightGreen} onClick={changeColor}>green</div>
+		<div className={"container d-flex justify-content-center bg-dark text-white"}>
+		</div>
+			<div className={"ligths container d-flex justify-content-center flex-column bg-dark"}>
+				<div className={"btn rounded-circle "+lightRed} onClick={changeColor}></div>
+				<div className={"btn rounded-circle "+lightYellow} onClick={changeColor}></div>
+				<div className={"btn rounded-circle "+lightGreen} onClick={changeColor}></div>
 			</div>
 		</>
-
-		// <div className="text-center">
-		// 	<h1 className="text-center mt-5">Seguidores {contador}</h1>
-		// 	<p>
-		// 		<img src={rigoImage} />
-		// 	</p>
-		// 	<a href="#" className={"btn "+colorBtn} onClick={contadorFollowers}>
-		// 		{text}
-		// 	</a>
-		// 	<p>
-		// 		Made by{" "}
-		// 		<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-		// 		love!
-		// 	</p>
-		// </div>
 	);
 };
 
