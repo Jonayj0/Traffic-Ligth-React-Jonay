@@ -11,7 +11,7 @@
 
 */
 
-/* ////------------------------------------ MI PRIMER CODIGO CON BOTONES Y BOTON SEMAFORO-------------------------------///// */
+/* ////------------------------------------ MI CODIGO CSS CON BOTONES Y BOTON SEMAFORO-------------------------------///// */
 .container {
     width: 25px;
     height: 150px;
@@ -43,6 +43,50 @@
     box-shadow: 0 0 50px rgb(224, 255, 68);
 }
 /* ////------------------------------------ MI PRIMER CODIGO CON BOTONES Y BOTON SEMAFORO-------------------------------///// */
+
+
+
+
+
+
+/* ---------------------------------MI SEGUNDO CODIGO CSS SIN BOTONES ------------*/
+/* .post {
+    width: 20px;
+    height: 150px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.top {
+    background: black;
+    width: 150px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10%;
+    padding: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+
+.onRed  {box-shadow: 0 0 50px rgb(247, 90, 125);}
+.onYellow {box-shadow: 0 0 50px rgb(224, 255, 68);}
+.onGreen { box-shadow: 0 0 50px #4f9; } */
+
+/* /////////---------------------------------------MI SEGUNDO CODIGO CSS SON BOTONES -----------------------------//////*/
+
 
 
 /* //---------------------CSS DE ALEJANDRO----------------------------// */

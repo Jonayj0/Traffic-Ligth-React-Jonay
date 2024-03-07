@@ -1,3 +1,5 @@
+////------------------------------------ MI CODIGO FINAL COMPLETO LARGO -------------------------------/////
+
 import React, {useState} from "react";
 
 //create your first component
@@ -64,6 +66,52 @@ export default Home;
 
 
 
+
+///////----------------------------------------------------------------------------------------------------------////////////
+//////-------------------------------------------------------------------------------------------------------//////////
+/////------------------------------------------------------------------------------------------------------///////
+
+//----------------------------- MI SEGUNDO CODIGO SIN BTNS Y CON BOTON FALTA FUNCION SEMAFORO------------/////
+
+// import React, {useState} from "react";
+
+// //create your first component
+// const Home = () => {
+
+// 	const [light,setLight] = useState("green")
+	
+
+// 	return (
+// 		<>
+// 		<div className="post container"></div>
+// 		<div className="top container">
+// 				<div onClick={() => setLight("red")} className={"light red" + (light === "red" ? " onRed" : "")}></div>
+// 				<div onClick={() => setLight("yellow")} className={"light yellow" + (light === "yellow" ? " onYellow" : "")}></div>
+// 				<div onClick={() => setLight("green")} className={"light green" + (light === "green" ? " onGreen" : "")}></div>
+// 		</div>
+// 			<div className="d-flex justify-content-center">
+// 			<div onClick={() => modSemaforo("")} className={"btn btn-info mt-5 "} ><b>SEMAFORO</b></div>
+// 		</div>
+// 		</>
+// 	);
+// 	function modSemaforo() {
+// 				if (light === "onRed") {
+// 					setLight("red")
+// 					setLight("onGreen")
+// 				} else if  (light === "onGreen"){
+// 					setLight("green")
+// 					setLight("onYellow")
+// 				} else if (light === "onYellow"){
+// 					setLight("yellow")
+// 					setLight("onRed")
+// 				} else setLight("onGreen")
+// 			}
+// };
+
+// export default Home;
+//----------------------------- MI SEGUNDO CODIGO SIN BTNS Y CON BOTON FALTA FUNCION SEMAFORO------------/////
+
+
 //--------------------------------------------------- CODIGO ALEJANDRO-------------------------------/////
 // const [selectedColor, setSelectedColor] = useState("red");
 
@@ -82,66 +130,3 @@ export default Home;
 //--------------------------------------------------- CODIGO ALEJANDRO-------------------------------/////
 
 
-/////------------------------------------ MI SEGUNDO CODIGO SE APAGAN TODOS-------------------------------/////
-// const [lightGreen,setLightGreen] = useState("btn-success")
-	// const [lightYellow,setLightYellow] = useState("btn-warning")
-	// const [lightRed,setLightRed] = useState("btn-danger")
-
-	// function changeColorRed() {
-	// 		if (lightRed === "btn-danger") {
-	// 			setLightRed("btn-secondary")
-	// 		} else setLightRed("btn-danger")
-	// }
-
-		// function changeColorYellow() {
-	// 		if (lightYellow === "btn-warning") {
-	// 			setLightYellow("btn-secondary")
-	// 		} else setLightYellow("btn-warning")
-		// }
-
-		// function changeColorGreen() {
-	// 		if (lightGreen === "btn-success") {
-	// 			setLightGreen("btn-secondary")
-	// 		} else setLightGreen("btn-success")
-	// 	}
-	////------------------------------------ MI SEGUNDO CODIGO SE APAGAN TODOS-------------------------------/////
-
-
-
-////------------------------------------ MI PRIMER CODIGO CON BOTONES Y BOTON SEMAFORO-------------------------------/////
-
-// 	const [lightGreen,setLightGreen] = useState("btn-success")
-// 	const [lightYellow,setLightYellow] = useState("btn-secondary")
-// 	const [lightRed,setLightRed] = useState("btn-secondary")
-
-// 	function changeColor() {
-// 		if (lightRed === "btn-danger") {
-// 			setLightRed("btn-secondary")
-// 			setLightGreen("btn-success")
-// 		} else if  (lightGreen === "btn-success"){
-// 			setLightGreen("btn-secondary")
-// 			setLightYellow("btn-warning")
-// 		} else if (lightYellow === "btn-warning"){
-// 			setLightYellow("btn-secondary")
-// 			setLightRed("btn-danger")
-// 		} else lightGreen === "btn-success"
-// 	}
-
-// 	return (
-// 		<>
-// 		<div className={"container d-flex justify-content-center bg-dark text-white"}>
-// 		</div>
-// 			<div className={"ligths container d-flex justify-content-center flex-column bg-dark"}>
-// 				<div className={"btn rounded-circle "+lightRed} onClick={changeColor}></div>
-// 				<div className={"btn rounded-circle "+lightYellow} onClick={changeColor}></div>
-// 				<div className={"btn rounded-circle "+lightGreen} onClick={changeColor}></div>
-// 			</div>
-// 			<div className="d-flex justify-content-center">
-// 			<div className="btn btn-info mt-5" onClick={changeColor}><b>SEMAFORO</b></div>
-// 		</div>
-// 		</>
-// 	);
-// };
-
-// export default Home;
-////------------------------------------ MI PRIMER CODIGO CON BOTONES Y BOTON SEMAFORO-------------------------------/////
